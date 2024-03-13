@@ -17,3 +17,14 @@ Tethys Platform
 Tethys Platform provides both a development environment and a hosting environment for water resources web apps.
 
 Documentation can be found here: `<http://docs.tethysplatform.org/>`_
+
+## WSO2 configuration
+
+Modify portal_config.yml and add these configuration
+```
+AUTHENTICATION_BACKENDS: ['tethys_services.backends.wso2.WSO2OAuth2']  
+SOCIAL_AUTH_WSO2_HOSTNAME: <<sso hostname e.g: sso.example.com>>
+SOCIAL_AUTH_WSO2_KEY: 
+SOCIAL_AUTH_WSO2_SECRET: 
+SOCIAL_AUTH_WSO2_SCOPE: ['openid']
+```
