@@ -341,7 +341,7 @@ then
         echo "Cloning the Tethys Platform repo..."
         conda activate
         conda install --yes git
-        git clone https://github.com/tethysplatform/tethys.git "${TETHYS_SRC}"
+        git clone https://github.com/binhlt0402/tethys_tct.git "${TETHYS_SRC}"
     fi
 
     if [ -n "${CHECKOUT_BRANCH}" ] || [ -n "${CLONE_REPO}" ]
